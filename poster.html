@@ -1,60 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cartel de la #RevueltaEscolar</title>
+  <title>Poster from  #RevueltaEscolar</title>
   <meta name="description" content="Rellena los campos y descárgate la imagen del cartel.">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link href="/application.css?v=7" media="all" rel="stylesheet" />
+  <link href="/application.css?v=8" media="all" rel="stylesheet" />
   <link href="/tool.css?v=7" media="all" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
   <script src="/js/html2canvas.min.js"></script>
   <script src="/js/canvas2image.js"></script>
   <script src="/js/sticky-kit.min.js"></script>
-  <script src="/application.js?v=7"></script>
+  <script src="/application.js?v=8"></script>
 </head>
 <body class="tool">
   <div class="layout">
     <div class="setup">
-      <a href="/" class="back">⬅ Volver</a>
-      <h1>DESCÁRGATE EL CARTEL:</h1>
-      <p>Esta herramienta está en fase de pruebas. Rellena los campos y descárgate la imagen. Si tienes algún problema, por favor, contáctanos por <a href="mailto:eixample.respira@gmail.com">correo</a>.</p>
+      <a href="/" class="back">⬅ Back</a>
+      <h1>DOWNLOAD THE POSTER:</h1>
+      <p>This tool is in beta. Fill in the fields and download the image. If you end up with any issue, please reach us at <a href="mailto:eixample.respira@gmail.com">eixample.respira@gmail.com</a>.</p>
       <div class="row">
-        <label>Acción reivindicativa:</label>
-        <input type="text" data-target=".poster .subtitle" placeholder="cortamos la calle Perú">
+        <label>Subtitle:</label>
+        <input type="text" data-target=".poster .subtitle" placeholder="we cut Main Street">
       </div>
       <div class="row">
-        <label>Dia:</label>
+        <label>Date:</label>
         <div class="shopify-select">
           <select data-target=".poster .date">
-            <option>Viernes 12 de febrero</option>
-            <option>Viernes 26 de febrero</option>
-            <option>Viernes 12 de marzo</option>
-            <option>Viernes 26 de marzo</option>
+            <option>Friday, February 12th</option>
+            <option>Friday, February 26th</option>
+            <option>Friday, March 12th</option>
+            <option>Friday, March 26th</option>
           </select>
           <svg class="shopify-select-icon" viewBox="0 0 24 24"><path d="M21 5.176l-9.086 9.353L3 5.176.686 7.647 12 19.382 23.314 7.647 21 5.176z"></path></svg>
         </div>
       </div>
       <div class="row">
-        <label>Hora:</label>
+        <label>Time:</label>
         <div class="shopify-select">
           <select data-target=".poster .time">
+            <option>12.00</option>
+            <option>12.15</option>
+            <option>12.30</option>
+            <option>12.45</option>
+            <option>13.00</option>
+            <option>13.15</option>
+            <option>13.30</option>
+            <option>13.45</option>
+            <option>14.00</option>
+            <option>14.15</option>
+            <option>14.30</option>
+            <option>14.45</option>
+            <option>15.00</option>
+            <option>15.15</option>
+            <option>15.30</option>
+            <option>15.45</option>
             <option>16.00</option>
             <option>16.15</option>
             <option selected>16.30</option>
             <option>16.45</option>
             <option>17.00</option>
+            <option>17.15</option>
+            <option>17.30</option>
+            <option>17.45</option>
+            <option>18.00</option>
           </select>
           <svg class="shopify-select-icon" viewBox="0 0 24 24"><path d="M21 5.176l-9.086 9.353L3 5.176.686 7.647 12 19.382 23.314 7.647 21 5.176z"></path></svg>
         </div>
       </div>
       <div class="row">
-        <label>Localitzación:</label>
-        <input type="text" data-target=".poster .location" maxlength="38" placeholder="Perú entre Diputación y Mayor">
+        <label>Location:</label>
+        <input type="text" data-target=".poster .location" maxlength="38" placeholder="Main Street between 3rd and 4rth">
       </div>
       <div class="row">
         <label>Duración:</label>
@@ -90,11 +110,11 @@
       <div class="container">
         <div class="poster">
           <img class="background" src="/images/base.png">
-          <div class="text subtitle">cortamos la calle Perú</div>
+          <div class="text subtitle">we cut Main Street</div>
           <div class="text info">
             <b><span class="date">Viernes 12 de febrero</span></b><br>
             <b><span class="time">16.30</span> h</b><br>
-            <span class="location">Perú entre Diputación y Mayor</span><br>
+            <span class="location">Main Street between 3rd and 4rth</span><br>
             Duración: <span class="duration">30 minutos</span>
           </div>
           <div class="logos">
@@ -109,6 +129,9 @@
               <div class="images">
               </div>
             </div>
+          </div>
+          <div class="url">
+            <div class="text">Más información en: <u>www.revueltaescolar.es</u></div>
           </div>
         </div>
       </div>  
